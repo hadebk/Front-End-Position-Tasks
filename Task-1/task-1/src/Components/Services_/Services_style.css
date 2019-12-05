@@ -1,0 +1,77 @@
+/* variables init */
+:root{
+    --green:#72b026;
+    --text:#3c3c41;
+}
+
+.services-box{
+    padding-bottom:60px ;
+}
+
+.item_{
+    margin-bottom: 35px;
+}
+.item_ .title{
+    font-family: 'Roboto Condensed','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    background-color: var(--green);
+    position: relative;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px 20px;
+    text-overflow: clip;
+    margin-bottom: 20px;
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    transform: skew(-10deg);
+    -webkit-box-shadow: -3px 3px 12px 0px #c9c9c9;
+    -moz-box-shadow: -3px 3px 12px 0px #c9c9c9;
+    box-shadow: -3px 3px 12px 0px #c9c9c9;
+}
+
+.title h4{
+    -webkit-transform: skew(10deg);
+    -moz-transform: skew(10deg);
+    -o-transform: skew(10deg);
+    transform: skew(10deg);
+    overflow-wrap: break-word;
+    letter-spacing: -1px;
+}
+
+.item_ p{
+    color: var(--text);
+    line-height: 1.2;
+    text-align: center;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.item_ a{
+    font-family: 'Roboto Condensed','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: var(--text);
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    display: block;
+}
+
+.item_ i{
+    position: absolute;
+    top: 5px;
+    right: 17px;
+    color: #333;
+    font-size: 20px;
+    z-index: 99;
+}
+
+.item_ i:hover{
+    cursor: pointer;
+}
+
+.message{
+    width: 100%;
+    text-align: center;
+}

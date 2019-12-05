@@ -1,0 +1,130 @@
+/* variables init */
+:root{
+    --green:#72b026;
+}
+
+/* start slogan box*/
+.slogan{
+    width: auto;
+    height: auto;
+    padding: 30px 90px 30px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 0;
+    top: 40%;
+    color: #fff;
+    overflow: hidden;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: lighter;
+    font-family: 'Bebas Neue','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-clip-path: polygon(26px 0, 100% 0%, 100% 100%, 0% 100%); /* to make div skew on left side only*/
+    clip-path: polygon(26px 0, 100% 0%, 100% 100%, 0% 100%); /* to make div skew on left side only*/
+}
+
+.slogan p{
+    margin-bottom: 0;
+}
+.slogan p:nth-child(1){
+    margin-left: 50px;
+}
+.slogan p:nth-child(2){
+    margin-left: 35px;
+}
+.slogan p:nth-child(3){
+    margin-left: 25px;
+}
+.slogan span{
+    font-weight: bold;
+}
+/*================================================*/
+
+/* start control arrows*/
+.icon-main-box{
+    position: absolute;
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    transform: skew(-10deg);
+}
+
+.icon-box i{
+    background-color: var(--green);
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px 20px;
+    margin-bottom: 4px;
+}
+/*==================================================*/
+  
+/*====================================[ start responsive edit] =======================================*/
+
+/* mobile screen */
+@media screen and (max-width:767px){
+    .carousel .carousel-item {
+        height: 350px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .carousel .carousel-inner img{
+        min-height: 100%;
+        object-fit: cover;
+    }
+    .slogan{
+        top: 25%;
+        font-size: 1.1rem;
+        padding-right: 25px;
+        -webkit-clip-path: polygon(19px 0, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(19px 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .slogan p:nth-child(1){
+        margin-left: 25px;
+    }
+    .slogan p:nth-child(2){
+        margin-left: 20px;
+    }
+    .slogan p:nth-child(3){
+        margin-left: 15px;
+    }
+    .icon-box i {
+        font-size: 1rem;
+    }
+}
+/*-------------------------------------------*/
+
+/* tablet screen */
+@media (min-width:768px) and (max-width:991px){
+    .slogan{
+        top: 30%;
+        font-size: 1.4rem;
+        padding-right: 50px;
+        -webkit-clip-path: polygon(23px 0, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(23px 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .slogan p:nth-child(1){
+        margin-left: 25px;
+    }
+    .slogan p:nth-child(2){
+        margin-left: 20px;
+    }
+    .slogan p:nth-child(3){
+        margin-left: 15px;
+    }
+    .icon-box i {
+        font-size: 1.3rem;
+    }
+}
+/*---------------------------------------------*/
+
+/* desktop mini screen*/
+@media (min-width:992px) and (max-width:1199px){
+    .slogan{
+        top: 35%;
+        font-size: 1.8rem;
+        padding-right: 30px;
+    }
+    .icon-box i {
+        font-size: 1.5rem;
+    }
+}

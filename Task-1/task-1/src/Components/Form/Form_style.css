@@ -1,0 +1,195 @@
+/* variables init */
+:root{
+    --green:#72b026;
+    --text:#3c3c41;
+}
+
+form{
+    margin: 50px 0;
+}
+
+.left .first-input:nth-child(1){
+    margin-bottom: 30px;
+}
+
+.textarea-box::after{
+    content: '';
+    border-bottom: 1px solid var(--green);
+    width: 25%;
+    position: absolute;
+    display: block;
+}
+
+.textarea-box textarea{
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #c8ccd4;
+    font-weight: 400;
+    height: 71%;
+    font-family: inherit;
+}
+
+.textarea-box textarea:hover{
+    background: rgba(34,50,84,0.03);
+}
+.textarea-box textarea:focus{
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid var(--green);
+    color: var(--text);
+    
+}
+
+.textarea-box .textarea-label{
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+    font-family: inherit;
+}
+.inp::after{
+    content: '';
+    border-bottom: 1px solid var(--green);
+    width: 20%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+}
+.add-btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.add-btn-box .add-btn{
+    color: #fff;
+    background-color: var(--green);
+    font-size: 28px;
+    border: 0;
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'Roboto Condensed','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 50px;
+    line-height: 2;
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    transform: skew(-10deg);
+}
+.add-btn-inner{
+    -webkit-transform: skew(10deg);
+    -moz-transform: skew(10deg);
+    -o-transform: skew(10deg);
+    transform: skew(10deg);
+}
+.add-btn-box .add-btn::before{
+    content: '';
+    width: 117px;
+    height: 1px;
+    background-color: var(--green);
+    position: absolute;
+    left: 0;
+    bottom: -11px;
+    display: block;
+    font-family: sans-serif;
+}
+.add-btn-box .add-btn::after{
+    content: '\2192';
+    color: var(--green);
+    position: absolute;
+    right: 0;
+    top: 36px;
+    height: 0;
+    font-family: sans-serif;
+    display: block;
+}
+
+/* mobile screen */
+@media screen and (max-width:767px){
+    .add-btn-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0;
+    }
+    .textarea-box {
+        margin-top: 30px;
+    }
+}
+
+/* tablet screen */
+@media (min-width:768px) and (max-width:991px){
+    .add-btn-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0;
+    }
+}
+  
+/*========================================================================= 
+ inputs style is from 'codepen.com'
+ [
+     Author of pen: 'Andreas Storm'
+     Link to pen: 'https://codepen.io/andreasstorm/pen/gKGbxo?editors=1100'
+ ]
+============================================================================*/
+.inp {
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+  
+.inp .label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.inp input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  padding: 12px 0;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 1px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: var(--text);
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+.inp input:not(:placeholder-shown) + span {
+    color: var(--green);
+    -webkit-transform: translateY(-26px) scale(0.75);
+    -moz-transform: translateY(-26px) scale(0.75);
+    -o-transform: translateY(-26px) scale(0.75);
+    transform: translateY(-26px) scale(0.75);
+}
+.inp input:hover {
+  background: rgba(34,50,84,0.03);
+}
+.inp input:focus {
+  background: none;
+  outline: none;
+  border-bottom: 1px solid var(--green);
+}
+.inp input:focus + span {
+  -webkit-transform: translateY(-26px) scale(0.75);
+  -moz-transform: translateY(-26px) scale(0.75);
+  -o-transform: translateY(-26px) scale(0.75);
+  transform: translateY(-26px) scale(0.75);
+  color: var(--green);
+}

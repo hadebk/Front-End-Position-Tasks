@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- important metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Pixel Art Maker!</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- style file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- ******************************************************************************** -->
+
+<body>
+    <!-- start main container -->
+    <div class="main">
+        <div class="container">
+
+            <!-- start choose-grid-size -->
+            <div id="form-box">
+                <form>
+                    <div class="form-group row">
+                        <label for="keyword" class="col-sm-2 col-form-label">keyword</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="keyword">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="source" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="source">
+                                <option>Sputniknews</option>
+                                <option>Coindesk</option>
+                                <option>The Next Web</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- start srticles-box -->
+            <div id="articles" class="row"></div>
+
+        </div>
+    </div>
+
+    <!-- js file -->
+    <script src="app.js"></script>
+</body>
+
+</html>

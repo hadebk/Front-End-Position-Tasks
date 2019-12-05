@@ -1,0 +1,52 @@
+/* [ fonts ] ---------------------------------------------------*/
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('fonts/Poppins/Poppins-Bold.ttf');
+}
+/* ------------------------------------------------------------*/
+
+#form-box{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#articles{
+    margin-bottom: 50px;
+}
+
+#articles .item{
+    box-shadow: 0 3px 9px 2px #EEEEEE;
+    margin-top: 20px;
+    padding: 40px 40px 30px;
+    border-radius: 10px;
+}
+
+#articles .item:hover{
+    box-shadow: 0 3px 10px 3px #cccccc;
+}
+
+#articles .item p{
+    color: #999;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:575px){
+    #articles .item{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    #articles .item h4{
+        font-size: 18px;
+    }
+    #articles .item p{
+        font-size: 14px;
+    }
+}
+

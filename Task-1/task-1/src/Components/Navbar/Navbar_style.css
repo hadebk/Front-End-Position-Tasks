@@ -1,0 +1,250 @@
+/* variables init */
+:root{
+    --green:#72b026;
+}
+/*====================*/
+
+/* main navbar box*/
+.navbar{
+    z-index: 999;
+    position: fixed;
+    height: 78px;
+    -webkit-transition: 0.7s all ease-in-out;
+    -moz-transition: 0.7s all ease-in-out;
+    -o-transition: 0.7s all ease-in-out;
+    transition:0.7s all ease-in-out;
+    font-family: 'Roboto Condensed','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar > .container{
+    background-color: #fff;
+    padding: 0;
+    height: 50px;
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    transform: skew(-10deg);
+    margin-top: 20px;
+}
+/*=========================================*/
+
+/* style to main div that contain all lis */
+.navbar #myNavbar{
+    justify-content: flex-end;
+    -webkit-transition: 1s all ease-in-out;
+    -moz-transition: 1s all ease-in-out;
+    -o-transition: 1s all ease-in-out;
+    transition: 1s all ease-in-out;
+}
+
+/* style li inside main div 'myNavbar' */
+.navbar .nav-item{
+    height: 50px;
+    line-height: 4;
+}
+
+/* style span inside li */
+.navbar .nav-item .menu-item{
+    font-size: 16px;
+    color: rgb(65, 65, 64);
+    font-weight: bold;
+    -webkit-transform: skew(10deg) !important;
+    -moz-transform: skew(10deg) !important;
+    -o-transform: skew(10deg) !important;
+    transform: skew(10deg) !important;
+}
+/*=========================================*/
+
+/* style logo box */
+.navbar .logo_box{
+    position: absolute;
+    background-color: var(--green);
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    top: -25px;
+    left: -1px;
+    height: 100px;
+    width: 270px;
+    text-align: center;
+    line-height: 2.3;
+}
+/*=================================*/
+
+/* style last li on right 'Connect' */
+.navbar .connect{
+    background-color: #72b026;
+    position: relative;
+    margin-left: 5px;
+    height: 80px;
+    top: -15px;
+    right: -1px;
+    line-height: 5.8;
+}
+
+.connect span{
+    color: #fff !important;
+}
+/*====================================*/
+
+/* style mneu button in tablet and mobile screen*/
+.navbar #menu-button button{
+    background-color: rgba(255, 255, 255, 0);
+    background-color: #72b026;
+    position: relative;
+    margin-left: 5px;
+    height: 80px;
+    top: -30px;
+    right: -1px;
+    line-height: 5.6;
+    padding: 0 15px;
+    border-radius:0 !important ;
+}
+
+.navbar .navbar-toggler i{ /* style icon it self*/
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-transform: skew(10deg);
+    -moz-transform: skew(10deg);
+    -o-transform: skew(10deg);
+    transform: skew(10deg);
+}
+/*==============================================*/
+
+/*====================================[ start responsive edit] =======================================*/
+
+/* mobile screen */
+@media screen and (max-width:767px){
+    .navbar .logo_box {
+        width: 150px;
+        top: -15px !important;
+        height: 80px !important;
+        line-height: 1.9 !important;
+    }
+    #myNavbar{
+        top: 75px !important;
+    }
+    .navbar > .container{
+        background-color: #fff;
+        padding: 0;
+        height: 50px;
+        -webkit-transform: skew(-10deg);
+        -moz-transform: skew(-10deg);
+        -o-transform: skew(-10deg);
+        transform: skew(-10deg);
+        margin-top: 0px;
+    }
+}
+/*----------------------------------*/
+
+@media (min-width:768px) and (max-width:991px){
+    #myNavbar{
+        top:75px !important
+    }
+}
+
+/* mobile & tablet screen*/
+@media (max-width:991px){ 
+    #myNavbar{
+        position: absolute;
+        background-color: var(--green);
+        max-width: 100%;
+        left: 47px;
+        right: -16%;
+        padding-top: 15px;
+        -webkit-transition: 0.5s all ease-in-out;
+        -moz-transition: 0.5s all ease-in-out;
+        -o-transition: 0.5s all ease-in-out;
+        transition: .5s all ease-in-out;
+        -webkit-transform: skew(10deg);
+        -moz-transform: skew(10deg);
+        -o-transform: skew(10deg);
+        transform: skew(10deg);
+    }
+    .navbar > .container{
+        margin-top: 0px;
+    }
+    .navbar .nav-item .menu-item{
+        float: left;
+        -webkit-transform: skew(0deg) !important;
+        -moz-transform: skew(0deg) !important;
+        -o-transform: skew(0deg) !important;
+        transform: skew(0deg) !important;
+    } 
+    #myNavbar a{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .navbar .nav-item {
+        height: 50px;
+        line-height: 2;
+    }
+    .nav-item span{
+        color: #333;
+    }
+    .navbar .logo_box {
+        top: -15px;
+        height: 80px;
+        line-height: 2;
+    }
+    .connect{
+        background-color: #fff !important;
+        position: relative;
+        margin-left: 0 !important; 
+        height: 50px; 
+        top: 0; 
+        right: 0; 
+        line-height: 2;
+        margin-top: 15px;
+    }
+    .connect span {
+        color: var(--green) !important;
+    }
+}
+/*---------------------------------------------*/
+
+/* desktop mini screen*/
+@media (min-width:992px) and (max-width:1199px){
+    .navbar .logo_box{
+        width: 150px;
+        line-height: 2.6;
+        font-size: 35px;
+    }
+}
+/*------------------------------------------------*/
+
+/*==================================== from 'Hover.css' - Underline From Left ============================*/
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    top: 53px;
+    background: var(--green);
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+    right: 0;
+}
