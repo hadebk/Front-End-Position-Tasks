@@ -2,7 +2,7 @@
   "name": "todo-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hadebk.github.io/tasks/"
+  "homepage": "https://hadebk.github.io/tasks/",
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
