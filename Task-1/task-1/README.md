@@ -1,3 +1,11 @@
+# About This Task
+
+- Simple React.js app with a little bit complicated design.
+- Implemented in React.js / CSS / Bootstrap
+
+*Clone it and run it :)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
