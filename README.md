@@ -4,4 +4,4 @@
 - Problem solving task.
 - Play with Javascript Dom task.
 
- ## Company feedback about this tasks was great :)
+ *Company feedback about this tasks was great :)
